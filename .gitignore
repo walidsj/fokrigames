@@ -1,0 +1,21 @@
+*/config/development
+*/logs/log-*.php
+!*/logs/index.html
+*/cache/*
+!*/cache/index.html
+!*/cache/.htaccess
+
+#codeigniter 3
+src/logs/*
+!src/logs/index.html
+!src/logs/.htaccess
+
+/.htaccess
+/public/uploads/foto_peserta/*
+/public/uploads/scan_ktm/*
+/public/uploads/pakta/*
+/src/.env
+/app/.env
+.vscode
+
+!index.html
