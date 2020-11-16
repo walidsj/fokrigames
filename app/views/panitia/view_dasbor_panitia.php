@@ -65,7 +65,7 @@
                                                 <tr>
                                                     <td><?= $i; ?></td>
                                                     <td><?= $t->whatsapp; ?><br>
-                                                        <a target="_blank" href="<?= site_url('paspor/reg?no=' . $t->whatsapp . '&token=' . urlencode($t->token)); ?>" class="badge badge-success">Right Click for Link</a>
+                                                        <a target="_blank" href="https://api.whatsapp.com/send?phone=<?= preg_replace('/^0?/', '62', $t->whatsapp); ?>&text=*TAUTAN%20PENDAFTARAN*%0A%0ALink%3A%20%0A%60%60%60<?= urlencode(site_url('paspor/reg?no=' . $t->whatsapp . '&token=' . urlencode($t->token))); ?>%60%60%60%0A%0A%60%60%60*Tautan%20ini%20berisi%20token%20pendaftaran%20dan%20bersifat%20rahasia.*%60%60%60" class="badge badge-success">Kirim ke Peserta</a>
                                                     </td>
                                                     <td><?= $t->nama_universitas; ?></td>
                                                     <td><?= unix_to_human($t->waktu); ?></td>

@@ -64,8 +64,8 @@ class Paspor extends CI_Controller
                 $data['title'] = 'Registrasi Akun';
                 $this->load->view('peserta/pages/paspor/registrasi', $data);
             } else {
-                if (!empty($this->db->get_where('data_pendaftar', ['whatsapp' => $data['calon']->whatsapp])->row())) {
-                    $this->session->set_flashdata('alert', 'No. Whatsapp telah terdaftar.');
+                if (/*!empty($this->db->get_where('data_pendaftar', ['whatsapp' => $data['calon']->whatsapp])->row()) or */!empty($this->db->get_where('data_pendaftar', ['email' => $this->input->post('email', true)])->row())) {
+                    $this->session->set_flashdata('alert', 'Alamat email telah terdaftar. Coba lagi.');
                     redirect('paspor');
                 } else {
                     $insert = [
