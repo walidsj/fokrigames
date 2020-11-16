@@ -31,5 +31,5 @@
 <meta name="msapplication-navbutton-color" content="#9e6d5b" />
 <meta name="apple-mobile-web-app-status-bar-style" content="#9e6d5b" />
 
-<link rel='manifest' href='<?= base_url(); ?>manifest.json'>
+<!-- <link rel='manifest' href='<?= base_url(); ?>manifest.json'> -->
 <link rel="apple-touch-icon" href="img/icon/180x180.png">

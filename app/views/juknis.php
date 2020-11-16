@@ -67,7 +67,4 @@
 		© 2020 Infomed <?= getenv('APP_NAME') ?><br>
 		Politeknik Keuangan Negara STAN
 	</span>
-
-</body>
-
-</html>
+	<?= $this->load->view('peserta/layouts/html_close', null, true); ?>
