@@ -5,7 +5,7 @@
 <img src="https://user-images.githubusercontent.com/50021257/98807147-cf5c9e00-244c-11eb-967c-8a6fa7f5a995.png" alt="License">
 </p>
 
-## Table of Contents
+##### Table of Contents
 * [About](#about)
 * [Features](#features)
 * [Screenshots](#screenshots)
