@@ -19,7 +19,7 @@ The programming language used on this website is based on PHP with the Codeignit
 * Upload the registration files and documents
 * Send email feature
 
-## Screenshot
+## Screenshots
 ![image](https://user-images.githubusercontent.com/50021257/98442630-3ec64b00-2138-11eb-9380-388b02cd9809.png)
 ![image](https://user-images.githubusercontent.com/50021257/98804846-4d1eaa80-2449-11eb-839c-016d96282fc0.png)
 ![image](https://user-images.githubusercontent.com/50021257/98804989-86571a80-2449-11eb-8e13-476b9f8ce696.png)
