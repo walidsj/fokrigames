@@ -6,8 +6,7 @@
 </p>
 
 ## About
-This is a repository for the official website of the Fokri Games, which held in the Politeknik Keuangan Negara STAN. Fokri Games is an event organized by Fokri-PTK and now is the sixth time in 2020.
-The Fokri Games website can be seen at [Fokri Games VI](https://fokrigames.com).
+This is a repository for the official website of the Fokri Games, which held in the Politeknik Keuangan Negara STAN. Fokri Games VI is an event organized by Fokri-PTK and specially by Masjid Baitul Maal in 2020. The Fokri Games VI website can be seen at [Fokri Games VI](https://fokrigames.com).
 
 The programming language used on this website is based on PHP with the Codeigniter 3 framework (obviously with a lot of modifications and optimizations to make it more reliable) and Bootstrap and JQuery as supporting front end displays.
 
