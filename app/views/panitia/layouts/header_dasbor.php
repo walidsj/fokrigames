@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="<?= base_url(); ?>public/assets/adminlte/plugins/select2/css/select2.min.css">
     <link rel="stylesheet" href="<?= base_url(); ?>public/assets/adminlte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="<?= base_url('public/assets/favicon.png'); ?>" rel="shortcut icon" type="image/png">
+
 </head>
 
 <body class="sidebar-mini layout-fixed layout-navbar-fixed">
