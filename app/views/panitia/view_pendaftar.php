@@ -31,6 +31,7 @@
                                                 <th>WhatsApp</th>
                                                 <th>Pakta</th>
                                                 <th>Status</th>
+                                                <th>Aksi</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -66,6 +67,9 @@
                                                         <?php } elseif ($pdaftar->fg_status < 1) { ?>
                                                             <span class="badge badge-pill badge-warning"><i class="fas fas fa-exclamation-circle mr-2"></i> Belum Difinalisasi</span>
                                                         <?php } ?>
+                                                    </td>
+                                                    <td>
+                                                        <a href="<?= site_url(); ?>panitia/lihat-peserta?idpendaftar=<?= $pdaftar->id; ?>&deletewesewes=yes" onclick="return confirm('Yakin mau hapus data pendaftar? Data peserta lomba di kontingen ini juga bakal dihapus lhoo. GA BISA DIBATALIN!! (<?= $pdaftar->nama_lengkap; ?>)')" class="badge badge-danger">Hapus</a>
                                                     </td>
                                                 </tr>
                                             <?php } ?>

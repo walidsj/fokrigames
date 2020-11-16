@@ -239,6 +239,31 @@ class Panitia extends CI_Controller
         $data['pendaftar'] = $this->CRUD->getOne('view_data', 'pendaftar', ['data_pendaftar.id' => $id]);
         $data['peserta']['data'] = $this->CRUD->getAll('view_data', 'peserta', 'nama_peserta', 'ASC', ['id_pendaftar' => $id]);
 
+        if (empty($data['pendaftar'])) {
+            show_404();
+        }
+
+        // Prosedur Hapus
+        $hapus = $this->input->get('deletewesewes', true);
+        if (!empty($data['pendaftar']) && $hapus == 'yes') {
+            if (file_exists(FCPATH . '/public/uploads/pakta/' . $data['pendaftar']->pakta)) {
+                unlink(FCPATH . '/public/uploads/pakta/' . $data['pendaftar']->pakta);
+            }
+            $this->db->delete('data_pendaftar', ['id' => $data['pendaftar']->id]);
+            foreach ($data['peserta']['data'] as $pesertaa) {
+                if (file_exists(FCPATH . '/public/uploads/foto_peserta/' . $pesertaa->foto)) {
+                    unlink(FCPATH . '/public/uploads/foto_peserta/' . $pesertaa->foto);
+                }
+                if (file_exists(FCPATH . '/public/uploads/scan_ktm/' . $pesertaa->scan_ktm)) {
+                    unlink(FCPATH . '/public/uploads/scan_ktm/' . $pesertaa->scan_ktm);
+                }
+                $this->db->delete('data_peserta', ['id' => $pesertaa->id]);
+            }
+            $this->session->set_flashdata('alert', 'Data pendaftar dan panitia berhasil dihapus.');
+            redirect('panitia');
+        }
+        //endhere
+
         $this->load->view('panitia/layouts/header_dasbor', $data);
         $this->load->view('panitia/partials/navigation', $data);
         $this->load->view('panitia/view_lihat_peserta', $data);

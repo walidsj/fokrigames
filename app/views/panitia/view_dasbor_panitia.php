@@ -69,7 +69,7 @@
                                                     </td>
                                                     <td><?= $t->nama_universitas; ?></td>
                                                     <td><?= unix_to_human($t->waktu); ?></td>
-                                                    <td><a href="<?= site_url(); ?>panitia?no=<?= $t->whatsapp; ?>&hapus=yes" onclick="confirm('Yakin mau hapus token <?= $t->whatsapp; ?>?')" class="badge badge-danger">Hapus</a></td>
+                                                    <td><a href="<?= site_url(); ?>panitia?no=<?= $t->whatsapp; ?>&hapus=yes" onclick="return confirm('Yakin mau hapus token <?= $t->whatsapp; ?>?')" class="badge badge-danger">Hapus</a></td>
                                                 </tr>
                                                 <?php $i++; ?>
                                             <?php endforeach; ?>
