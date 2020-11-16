@@ -64,28 +64,33 @@ class Paspor extends CI_Controller
                 $data['title'] = 'Registrasi Akun';
                 $this->load->view('peserta/pages/paspor/registrasi', $data);
             } else {
-                $insert = [
-                    'id_universitas' => $data['calon']->id_universitas,
-                    'whatsapp' => $data['calon']->whatsapp,
-                    'pakta' => null,
-                    'fg_status' => 0,
-                    'tanggal_daftar' => now(),
-                    'email' => $this->input->post('email', true),
-                    'password' => password_hash($this->input->post('password', true), PASSWORD_DEFAULT),
-                    'nama_lengkap' => $this->input->post('nama_lengkap', true),
-                    'npm' => $this->input->post('npm', true)
-                ];
-                if ($this->CRUD->insertOne('data', 'pendaftar', $insert) > 0) {
-                    $this->db->delete('temp_token', ['whatsapp' => $data['calon']->whatsapp]);
-                    $this->session->set_flashdata('alert', 'Registrasi berhasil! Silakan login melalui halaman berikut.');
+                if (!empty($this->db->get_where('data_pendaftar', ['whatsapp' => $data['calon']->whatsapp])->row())) {
+                    $this->session->set_flashdata('alert', 'No. Whatsapp telah terdaftar.');
                     redirect('paspor');
                 } else {
-                    $this->session->set_flashdata('alert', 'Registrasi gagal! Coba lagi atau hubungi panitia/administrator.');
-                    redirect(current_url() . '?no=' . $whatsapp . '&token=' . $token);
+                    $insert = [
+                        'id_universitas' => $data['calon']->id_universitas,
+                        'whatsapp' => $data['calon']->whatsapp,
+                        'pakta' => null,
+                        'fg_status' => 0,
+                        'tanggal_daftar' => now(),
+                        'email' => $this->input->post('email', true),
+                        'password' => password_hash($this->input->post('password', true), PASSWORD_DEFAULT),
+                        'nama_lengkap' => $this->input->post('nama_lengkap', true),
+                        'npm' => $this->input->post('npm', true)
+                    ];
+                    if ($this->CRUD->insertOne('data', 'pendaftar', $insert) > 0) {
+                        $this->db->delete('temp_token', ['whatsapp' => $data['calon']->whatsapp]);
+                        $this->session->set_flashdata('alert', 'Registrasi berhasil! Silakan login melalui halaman berikut.');
+                        redirect('paspor');
+                    } else {
+                        $this->session->set_flashdata('alert', 'Registrasi gagal! Coba lagi atau hubungi panitia/administrator.');
+                        redirect(current_url() . '?no=' . $whatsapp . '&token=' . urlencode($token));
+                    }
                 }
             }
         } else {
-            $this->session->set_flashdata('alert', 'Token tidak valid.');
+            $this->session->set_flashdata('alert', 'Token tidak valid. (x000)');
             redirect('paspor');
         }
     }

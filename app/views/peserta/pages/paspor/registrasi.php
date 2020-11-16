@@ -14,7 +14,7 @@
                   </a>
                   <h4>Registrasi</h4>
                   <h6 class="font-weight-light">Silakan lengkapi data diri berikut.</h6>
-                  <?= form_open(current_url() . '?no=' . $this->input->get('no') . '&token=' . $this->input->get('token'), ['class' => 'pt-3']); ?>
+                  <?= form_open(current_url() . '?no=' . $this->input->get('no') . '&token=' . urlencode($this->input->get('token')), ['class' => 'pt-3']); ?>
                   <div class="form-group mb-3">
                      <label>No. WhatsApp</label>
                      <input class="form-control" disabled value="<?= $calon->whatsapp; ?>">
