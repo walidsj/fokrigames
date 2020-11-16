@@ -5,20 +5,20 @@
 <img src="https://user-images.githubusercontent.com/50021257/98807147-cf5c9e00-244c-11eb-967c-8a6fa7f5a995.png" alt="License">
 </p>
 
-## Tentang
-Ini adalah repository untuk website resmi dari Fokri Games yang diadakan di Politeknik Keuangan Negara STAN. Fokri Games  ajang yang diselenggarakan oleh Fokri-PTK dan merupakan kali keenam pada tahun 2020.
-Website Fokri Games dapat dilihat di [Fokri Games 6](https://fokrigames.com).
+## About
+This is a repository for the official website of the Fokri Games, which held in the Politeknik Keuangan Negara STAN. Fokri Games is an event organized by Fokri-PTK and now is the sixth time in 2020.
+The Fokri Games website can be seen at [Fokri Games VI](https://fokrigames.com).
 
-Bahasa pemrograman yang digunakan dalam website ini berbasis PHP dengan framework Codeigniter 3 (sudah jelas dengan banyak modifikasi dan optimasi agar lebih handal) serta Bootstrap dan JQuery sebagai pendukung tampilan front end.
+The programming language used on this website is based on PHP with the Codeigniter 3 framework (obviously with a lot of modifications and optimizations to make it more reliable) and Bootstrap and JQuery as supporting front end displays.
 
-## Fitur
+## Features
 
-* Halaman landing
-* Fitur login dan lupa password
-* Panel peserta pendaftaran/registrasi lomba
-* Panel admin
-* Upload berkas pendaftaran
-* Fitur kirim email
+* Beautiful landing page
+* Login and forgot password feature
+* The user or participant panel
+* Admin panel
+* Upload the registration files and documents
+* Send email feature
 
 ## Screenshot
 ![image](https://user-images.githubusercontent.com/50021257/98442630-3ec64b00-2138-11eb-9380-388b02cd9809.png)
