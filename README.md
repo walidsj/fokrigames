@@ -23,6 +23,7 @@ The programming language used on this website is based on PHP with the Codeignit
 * Admin panel
 * Upload the registration files and documents
 * Send email feature
+* Progressive Web App (has been deleted)
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/50021257/98442630-3ec64b00-2138-11eb-9380-388b02cd9809.png)
