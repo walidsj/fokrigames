@@ -74,9 +74,9 @@ class Paspor extends CI_Controller
                         'pakta' => null,
                         'fg_status' => 0,
                         'tanggal_daftar' => now(),
-                        'email' => $this->input->post('email', true),
+                        'email' => strtolower($this->input->post('email', true)),
                         'password' => password_hash($this->input->post('password', true), PASSWORD_DEFAULT),
-                        'nama_lengkap' => $this->input->post('nama_lengkap', true),
+                        'nama_lengkap' => strtoupper($this->input->post('nama_lengkap', true)),
                         'npm' => $this->input->post('npm', true)
                     ];
                     if ($this->CRUD->insertOne('data', 'pendaftar', $insert) > 0) {

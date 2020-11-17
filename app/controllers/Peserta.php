@@ -61,7 +61,7 @@ class Peserta extends CI_Controller
             if ($upload_image && $upload_ktm) {
                 $peserta = [
                     'id_pendaftar' => $data['pendaftar']->id,
-                    'nama_peserta' => ucwords(htmlspecialchars($this->input->post('nama_peserta', TRUE))),
+                    'nama_peserta' => strtoupper(htmlspecialchars($this->input->post('nama_peserta', TRUE))),
                     'id_cabor' => htmlspecialchars($this->input->get('cabor', TRUE)),
                     'npm' => htmlspecialchars($this->input->post('npm', TRUE)),
                     'whatsapp_peserta' => htmlspecialchars($this->input->post('whatsapp_peserta', TRUE)),
