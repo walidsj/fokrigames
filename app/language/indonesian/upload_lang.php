@@ -1,15 +1,5 @@
 <?php
-/**
- * System messages translation for CodeIgniter(tm)
- *
- * @author CodeIgniter community
- * @author Mutasim Ridlo, S.Kom
- * @copyright Copyright (c) 2014-2019, British Columbia Institute of Technology (https://bcit.ca/)
- * @license http://opensource.org/licenses/MIT MIT License
- * @link https://codeigniter.com
- */
-defined('BASEPATH') OR exit('No direct script access allowed');
-
+defined('BASEPATH') or exit('No direct script access allowed');
 $lang['upload_userfile_not_set'] = 'Tidak dapat menemukan variabel pos yang disebut userfile.';
 $lang['upload_file_exceeds_limit'] = 'Berkas yang diunggah melebihi ukuran maksimum yang diperbolehkan dalam berkas konfigurasi PHP Anda.';
 $lang['upload_file_exceeds_form_limit'] = 'Berkas yang diunggah melebihi ukuran maksimum yang diperbolehkan oleh formulir pengajuan.';

@@ -1,15 +1,5 @@
 <?php
-/**
- * System messages translation for CodeIgniter(tm)
- *
- * @author CodeIgniter community
- * @author Mutasim Ridlo, S.Kom
- * @copyright Copyright (c) 2014-2019, British Columbia Institute of Technology (https://bcit.ca/)
- * @license http://opensource.org/licenses/MIT MIT License
- * @link https://codeigniter.com
- */
-defined('BASEPATH') OR exit('No direct script access allowed');
-
+defined('BASEPATH') or exit('No direct script access allowed');
 $lang['date_year'] = 'Tahun';
 $lang['date_years'] = 'Tahun';
 $lang['date_month'] = 'Bulan';
@@ -24,7 +14,6 @@ $lang['date_minute'] = 'Menit';
 $lang['date_minutes'] = 'Menit';
 $lang['date_second'] = 'Detik';
 $lang['date_seconds'] = 'Detik';
-
 $lang['UM12'] = '(UTC -12:00) Pulau Baker/Howland';
 $lang['UM11'] = '(UTC -11:00) Niue';
 $lang['UM10'] = '(UTC -10:00) Standar Waktu Hawaii-Aleutian, Pulau Cook, Tahiti';

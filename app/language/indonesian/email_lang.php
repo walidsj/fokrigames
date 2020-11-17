@@ -1,15 +1,5 @@
 <?php
-/**
- * System messages translation for CodeIgniter(tm)
- *
- * @author CodeIgniter community
- * @author Mutasim Ridlo, S.Kom
- * @copyright Copyright (c) 2014-2019, British Columbia Institute of Technology (https://bcit.ca/)
- * @license http://opensource.org/licenses/MIT MIT License
- * @link https://codeigniter.com
- */
-defined('BASEPATH') OR exit('No direct script access allowed');
-
+defined('BASEPATH') or exit('No direct script access allowed');
 $lang['email_must_be_array'] = 'Metode validasi email harus melewati sebuah array.';
 $lang['email_invalid_address'] = 'Alamat email tidak sah: %s';
 $lang['email_attachment_missing'] = 'Tidak dapat menemukan lampiran email berikut: %s';
