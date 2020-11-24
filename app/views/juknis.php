@@ -6,9 +6,9 @@
 	<!-- Required meta tags -->
 	<?= $this->load->view('layouts/meta', null, true); ?>
 
-	<link href="<?= base_url('assets/favicon.png'); ?>" rel="shortcut icon" type="image/png">
+	<link href="<?= base_url('public/assets/favicon.png'); ?>" rel="shortcut icon" type="image/png">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="<?= base_url(); ?>assets/linktree/css/style.css" />
+	<link rel="stylesheet" href="<?= base_url(); ?>public/assets/linktree/css/style.css" />
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
 
 </head>
@@ -18,7 +18,7 @@
 		Browser tidak support javascript atau fungsi script pada browser telah dimatikan.
 	</noscript>
 	<a href="<?= site_url(); ?>">
-		<img class="logo" src="<?= base_url(); ?>assets/linktree/images/logo.png" alt="logo" style="width: 100px; margin-top: 32px">
+		<img class="logo" src="<?= base_url(); ?>public/assets/linktree/images/logo.png" alt="logo" style="width: 100px; margin-top: 32px">
 	</a>
 	<h2>Petunjuk Teknis</h2>
 	<div class="links">
@@ -59,7 +59,7 @@
 
 
 	<div class="channels" style="margin:32px auto">
-		<a class="channels__item" href="https://www.instagram.com/fokrigames6/" target="_blank"><img src="<?= base_url(); ?>assets/linktree/images/instagram.png" alt="instagram" width=40 height=40></a>
+		<a class="channels__item" href="https://www.instagram.com/fokrigames6/" target="_blank"><img src="<?= base_url(); ?>public/assets/linktree/images/instagram.png" alt="instagram" width=40 height=40></a>
 	</div>
 	</div>
 
