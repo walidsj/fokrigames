@@ -53,7 +53,8 @@
                   <img src="<?= base_url(); ?>public/assets/splash/images/logo.png" alt="<?= getenv('APP_NAME'); ?>" width="75">
                   <h2 class="mb-0">Tablig Akbar #1</h2>
                   <h5>Ukhuwah dan Fastabiqul Khairat: Tak Boleh Mati di Tengah Pandemi</h5>
-                  <span class="d-block"><i class="fas fa-calendar"></i> Sabtu, 19 Desember 2020 (19.30 WIB - Selesai)</span>
+                  <span class="d-block"><i class="fas fa-calendar"></i> Sabtu, 19 Desember 2020</span>
+                  <span class="d-block"><i class="fas fa-clock"></i> 19.30 WIB - Selesai</span>
                   <a href="http://gg.gg/tablighakbar1fokri" class="btn btn-warning mt-3 font-weight-bold">Daftar Tablig #1</a>
                   <a href="https://wa.me/6282333472574" class="text-dark d-block mt-3"><i class="fab fa-whatsapp"></i> Yayan Muarif</a>
                </div>
@@ -73,7 +74,8 @@
                   <img src="<?= base_url(); ?>public/assets/splash/images/logo.png" alt="<?= getenv('APP_NAME'); ?>" width="75">
                   <h2 class="mb-0">Webinar Fokri</h2>
                   <h5>Berdaya Karya untuk Indonesia</h5>
-                  <span class="d-block"><i class="fas fa-calendar"></i> Ahad, 20 Desember 2020 (12.30 WIB - Selesai)</span>
+                  <span class="d-block mb-0"><i class="fas fa-calendar"></i> Ahad, 20 Desember 2020</span>
+                  <span class="d-block"><i class="fas fa-clock"></i> 12.30 WIB - Selesai</span>
                   <a href="http://gg.gg/webinarfokri" class="btn btn-warning mt-3 font-weight-bold">Daftar Webinar</a>
                   <a href="https://wa.me/6281578938738" class="text-dark d-block mt-3"><i class="fab fa-whatsapp"></i> Faturrachman</a>
                </div>
@@ -87,7 +89,8 @@
                   <img src="<?= base_url(); ?>public/assets/splash/images/logo.png" alt="<?= getenv('APP_NAME'); ?>" width="75">
                   <h2 class="mb-0">Tablig Akbar #2</h2>
                   <h5 class="mt-0">Satu Cita Demi Negeri Tercinta</h5>
-                  <span class="d-block"><i class="fas fa-calendar"></i> Ahad, 20 Desember 2020 (15.30 WIB - Selesai)</span>
+                  <span class="d-block"><i class="fas fa-calendar"></i> Ahad, 20 Desember 2020</span>
+                  <span class="d-block"><i class="fas fa-clock"></i> 15.30 WIB - Selesai</span>
                   <a href="http://gg.gg/tablighakbar2fokri" class="btn btn-warning mt-3 font-weight-bold">Daftar Tablig #2</a>
                   <a href="https://wa.me/6281377982938" class="text-dark d-block mt-3"><i class="fab fa-whatsapp"></i> Ilham Tsaqif</a>
                </div>
