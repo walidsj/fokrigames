@@ -3,10 +3,9 @@
 
 <head>
    <?= $this->load->view('layouts/meta', null, true); ?>
-
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-   <link rel="stylesheet" type="text/css" href="https://alvarotrigo.com/fullPage/fullpage.css" />
-   <link rel="stylesheet" type="text/css" href="https://alvarotrigo.com/fullPage/examples/examples.css" />
+   <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>public/assets/css/fullpage.css" />
+   <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>public/assets/css/examples.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -116,7 +115,7 @@
    </div>
 
    <script type="text/javascript" src="https://alvarotrigo.com/fullPage/fullpage.js"></script>
-   <script type="text/javascript" src="https://alvarotrigo.com/fullPage/examples/examples.js"></script>
+   <script type="text/javascript" src="<?= base_url(); ?>public/assets/js/examples.js"></script>
    <script type="text/javascript">
       var myFullpage = new fullpage('#fullpage', {
          navigation: true,
