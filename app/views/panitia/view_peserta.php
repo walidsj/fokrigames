@@ -43,8 +43,8 @@
                                             <?php foreach ($peserta as $serta) { ?>
                                                 <tr>
                                                     <td></td>
-                                                    <td><?= $serta->nama_peserta; ?></td>
                                                     <td><?= $serta->nama_cabor; ?></td>
+                                                    <td><?= $serta->nama_peserta; ?></td>
                                                     <td><?= $serta->nama_universitas; ?></td>
                                                     <td>
                                                         <?= $serta->nama_pendaftar; ?>
