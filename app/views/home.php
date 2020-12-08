@@ -55,7 +55,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-6 align-self-center">
-                  <img src="<?= base_url(); ?>public/assets/splash/images/logo.png" alt="<?= getenv('APP_NAME'); ?>" width="75">
+                  <img src="<?= base_url(); ?>public/assets/splash/images/rumah.png" alt="<?= getenv('APP_NAME'); ?>" width="104">
                   <h2 class="mb-0">Tablig Akbar #1</h2>
                   <h5>Ukhuwah dan Fastabiqul Khairat: Tak Boleh Mati di Tengah Pandemi</h5>
                   <span class="d-block"><i class="fas fa-calendar"></i> Sabtu, 19 Desember 2020</span>
@@ -76,7 +76,7 @@
                   <img class="img img-fluid" src="<?= base_url(); ?>public/assets/images/webinarthum.png" alt="<?= getenv('APP_TITLE'); ?>">
                </div>
                <div class="col-md-6 align-self-center">
-                  <img src="<?= base_url(); ?>public/assets/splash/images/logo.png" alt="<?= getenv('APP_NAME'); ?>" width="75">
+                  <img src="<?= base_url(); ?>public/assets/splash/images/rumah.png" alt="<?= getenv('APP_NAME'); ?>" width="104">
                   <h2 class="mb-0">Webinar Fokri</h2>
                   <h5>Berdaya Karya untuk Indonesia</h5>
                   <span class="d-block mb-0"><i class="fas fa-calendar"></i> Ahad, 20 Desember 2020</span>
@@ -91,7 +91,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-6 align-self-center">
-                  <img src="<?= base_url(); ?>public/assets/splash/images/logo.png" alt="<?= getenv('APP_NAME'); ?>" width="75">
+                  <img src="<?= base_url(); ?>public/assets/splash/images/rumah.png" alt="<?= getenv('APP_NAME'); ?>" width="104">
                   <h2 class="mb-0">Tablig Akbar #2</h2>
                   <h5 class="mt-0">Satu Cita Demi Negeri Tercinta</h5>
                   <span class="d-block"><i class="fas fa-calendar"></i> Ahad, 20 Desember 2020</span>
