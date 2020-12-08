@@ -87,41 +87,8 @@ class Panitia extends CI_Controller
         $data['panitia'] = $this->CRUD->getOne('data', 'panitia', ['id_panitia' => $this->session->panitia['id_panitia'], 'data_panitia.email_panitia' => $this->session->panitia['email_panitia']]);
 
         $data['pengumuman'] = $this->CRUD->getAll('temp', 'pengumuman', 'id', 'DESC');
-        $data['cabor'] = $this->CRUD->getAll('ref', 'cabor', 'nama_cabor', 'ASC');
 
-        $data['pendaftar']['data'] = $this->CRUD->getAll('view_data', 'pendaftar', 'nama_lengkap', 'ASC');
-        $data['pendaftar']['aktivasi'] = array_filter($data['pendaftar']['data'], function ($array) {
-            if (!empty($array->fg_email)) {
-                return TRUE;
-            } else {
-                return FALSE;
-            }
-        });
-        $data['pendaftar']['finalisasi'] = array_filter($data['pendaftar']['data'], function ($array) {
-            if ($array->fg_status > 0) {
-                return TRUE;
-            } else {
-                return FALSE;
-            }
-        });
-
-        $data['peserta']['data'] = $this->CRUD->getAll('view_data', 'peserta', 'nama_peserta', 'ASC');
-        $data['peserta']['finalisasi'] = array_filter($data['peserta']['data'], function ($array) {
-            if (($array->fg_status > 0)) {
-                return TRUE;
-            } else {
-                return FALSE;
-            }
-        });
-
-        $data['folder_univ']['data'] = glob('assets/upload/foto_peserta/asli/*', GLOB_ONLYDIR);
-        $data['folder_univ']['terisi'] = array_filter($data['folder_univ']['data'], function ($array) {
-            if ((count(scandir($array)) > 2)) {
-                return TRUE;
-            } else {
-                return FALSE;
-            }
-        });
+        $data['pendaftar'] = $this->CRUD->getAll('view_data', 'pendaftar', 'nama_lengkap', 'ASC');
 
         $this->load->view('panitia/layouts/header_dasbor', $data);
         $this->load->view('panitia/partials/navigation', $data);
@@ -129,7 +96,7 @@ class Panitia extends CI_Controller
         $this->load->view('panitia/layouts/footer_dasbor', $data);
     }
 
-    public function peserta($bobo = null)
+    public function peserta()
     {
         if (!$this->session->panitia) {
             show_404();
@@ -139,49 +106,12 @@ class Panitia extends CI_Controller
         $data['panitia'] = $this->CRUD->getOne('data', 'panitia', ['id_panitia' => $this->session->panitia['id_panitia'], 'data_panitia.email_panitia' => $this->session->panitia['email_panitia']]);
 
         $data['pengumuman'] = $this->CRUD->getAll('temp', 'pengumuman', 'id', 'DESC');
-        $data['cabor'] = $this->CRUD->getAll('ref', 'cabor', 'nama_cabor', 'ASC');
 
-        $data['pendaftar']['data'] = $this->CRUD->getAll('view_data', 'pendaftar', 'nama_lengkap', 'ASC');
-        $data['pendaftar']['aktivasi'] = array_filter($data['pendaftar']['data'], function ($array) {
-            if (!empty($array->fg_email)) {
-                return TRUE;
-            } else {
-                return FALSE;
-            }
-        });
-        $data['pendaftar']['finalisasi'] = array_filter($data['pendaftar']['data'], function ($array) {
-            if ($array->fg_status > 0) {
-                return TRUE;
-            } else {
-                return FALSE;
-            }
-        });
-
-        $data['peserta']['data'] = $this->CRUD->getAll('view_data', 'peserta', 'nama_peserta', 'ASC');
-        $data['peserta']['finalisasi'] = array_filter($data['peserta']['data'], function ($array) {
-            if (($array->fg_status > 0)) {
-                return TRUE;
-            } else {
-                return FALSE;
-            }
-        });
-
-        $data['folder_univ']['data'] = glob('assets/upload/foto_peserta/asli/*', GLOB_ONLYDIR);
-        $data['folder_univ']['terisi'] = array_filter($data['folder_univ']['data'], function ($array) {
-            if ((count(scandir($array)) > 2)) {
-                return TRUE;
-            } else {
-                return FALSE;
-            }
-        });
+        $data['peserta'] = $this->CRUD->getAll('view_data', 'peserta', 'nama_peserta', 'ASC', ['data_pendaftar.fg_status' => 1]);
 
         $this->load->view('panitia/layouts/header_dasbor', $data);
         $this->load->view('panitia/partials/navigation', $data);
-        if ($bobo == 'semua' || $bobo == null) {
-            $this->load->view('panitia/view_peserta', $data);
-        } elseif ($bobo == 'sudah-final') {
-            $this->load->view('panitia/view_peserta_sdhfinal', $data);
-        }
+        $this->load->view('panitia/view_peserta', $data);
         $this->load->view('panitia/layouts/footer_dasbor', $data);
     }
 

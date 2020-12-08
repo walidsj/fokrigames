@@ -30,6 +30,7 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
+                                                <th>Cabang Lomba</th>
                                                 <th>Nama Lengkap</th>
                                                 <th>Asal Perguruan Tinggi</th>
                                                 <th>Penanggung Jawab</th>
@@ -39,10 +40,11 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php foreach ($peserta['data'] as $serta) { ?>
+                                            <?php foreach ($peserta as $serta) { ?>
                                                 <tr>
                                                     <td></td>
                                                     <td><?= $serta->nama_peserta; ?></td>
+                                                    <td><?= $serta->nama_cabor; ?></td>
                                                     <td><?= $serta->nama_universitas; ?></td>
                                                     <td>
                                                         <?= $serta->nama_pendaftar; ?>

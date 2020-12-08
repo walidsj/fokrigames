@@ -35,7 +35,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php foreach ($pendaftar['data'] as $pdaftar) { ?>
+                                            <?php foreach ($pendaftar as $pdaftar) { ?>
                                                 <tr>
                                                     <td></td>
                                                     <td><?= $pdaftar->nama_lengkap; ?>
