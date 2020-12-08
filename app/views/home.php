@@ -102,7 +102,7 @@
          <div class="container">
             <div class="row">
                <div class="col">
-                  <img src="<?= base_url(); ?>public/assets/splash/images/logo.png" alt="<?= getenv('APP_NAME'); ?>" width="75">
+                  <img src="<?= base_url(); ?>public/assets/splash/images/logo.png" alt="<?= getenv('APP_NAME'); ?>" width="96">
                   <span class="d-block mb-4"> &#169;2020 Fokri Games VI 2020</span>
                   <h3>Media Partner</h3>
                   <img class="p-2" src="<?= base_url(); ?>public/assets/images/medpart1.png" alt="<?= getenv('APP_NAME'); ?>" width="64">
