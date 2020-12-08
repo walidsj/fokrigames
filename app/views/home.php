@@ -44,7 +44,7 @@
             <br>
             <img class="img img-fluid" src="<?= base_url(); ?>public/assets/splash/images/title.png" alt="<?= getenv('APP_TITLE'); ?>">
             <h2 class="mb-5">Berkarya Bersama Ciptakan Kejayaan Indonesia</h2>
-            <div class="animate__animated animate__bounce animate__infinite"><i class="fas fa-arrow-circle-down fa-2x"></i></div>
+            <div class="animate__animated animate__bounce animate__infinite"><i class="fas fa-arrow-circle-down fa-2x mt-5"></i></div>
          </div>
       </div>
       <div class="section" id="section1">
