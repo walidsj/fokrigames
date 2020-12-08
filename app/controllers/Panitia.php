@@ -107,7 +107,7 @@ class Panitia extends CI_Controller
 
         $data['pengumuman'] = $this->CRUD->getAll('temp', 'pengumuman', 'id', 'DESC');
 
-        $data['peserta'] = $this->CRUD->getAll('view_data', 'peserta', 'nama_peserta', 'ASC');
+        $data['peserta'] = $this->CRUD->getAll('view_data', 'peserta', 'nama_cabor', 'ASC', null, 'nama_peserta', 'ASC');
 
         $this->load->view('panitia/layouts/header_dasbor', $data);
         $this->load->view('panitia/partials/navigation', $data);
