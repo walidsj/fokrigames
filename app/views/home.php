@@ -28,6 +28,11 @@
          background-color: #ae534e;
          border-color: #ae534e;
       }
+
+      #fp-nav ul li a span,
+      .fp-slidesNav ul li a span {
+         background: #ae534e !important;
+      }
    </style>
 </head>
 
