@@ -42,8 +42,13 @@
             <img src="<?= base_url(); ?>public/assets/splash/images/logo.png" alt="<?= getenv('APP_NAME'); ?>" width="144" style="margin-bottom: 20px">
             <br>
             <img class="img img-fluid" src="<?= base_url(); ?>public/assets/splash/images/title.png" alt="<?= getenv('APP_TITLE'); ?>">
-            <h2 class="mb-5">Berkarya Bersama Ciptakan Kejayaan Indonesia</h2>
-            <div class="animate__animated animate__bounce animate__infinite"><i class="fas fa-arrow-circle-down fa-2x mt-5"></i></div>
+            <h2 class="mb-5 pb-3">Berkarya Bersama Ciptakan Kejayaan Indonesia</h2>
+            <div class="mt-5">
+               <div class="animate__animated animate__bounce animate__infinite">
+                  <span class="mt-5 d-block">Daftar Acara!</span>
+                  <i class="fas fa-arrow-circle-down fa-2x"></i>
+               </div>
+            </div>
          </div>
       </div>
       <div class="section" id="section1">
