@@ -54,7 +54,7 @@
                   <a href="https://wa.me/6282333472574" class="text-dark d-block mt-3"><i class="fab fa-whatsapp"></i> Yayan Muarif</a>
                </div>
                <div class="col-md-6 align-self-center">
-
+                  <img class="img img-fluid" src="<?= base_url(); ?>public/assets/images/tablighthum1.png" alt="<?= getenv('APP_TITLE'); ?>">
                </div>
             </div>
          </div>
@@ -88,7 +88,7 @@
                   <a href="https://wa.me/6281377982938" class="text-dark d-block mt-3"><i class="fab fa-whatsapp"></i> Ilham Tsaqif</a>
                </div>
                <div class="col-md-6 align-self-center">
-
+                  <img class="img img-fluid" src="<?= base_url(); ?>public/assets/images/tablighthum2.png" alt="<?= getenv('APP_TITLE'); ?>">
                </div>
             </div>
          </div>
