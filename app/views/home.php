@@ -103,7 +103,7 @@
                <div class="col">
                   <img src="<?= base_url(); ?>public/assets/splash/images/logo.png" alt="<?= getenv('APP_NAME'); ?>" width="96">
                   <span class="d-block mb-4"> &#169;2020 Fokri Games VI 2020</span>
-                  <h3>Media Partner</h3>
+                  <h3 class="mt-5">Media Partner</h3>
                   <img class="p-2" src="<?= base_url(); ?>public/assets/images/medpart1.png" alt="<?= getenv('APP_NAME'); ?>" width="64">
                   <img class="p-2" src="<?= base_url(); ?>public/assets/images/medpart2.png" alt="<?= getenv('APP_NAME'); ?>" width="64">
                   <img class="p-2" src="<?= base_url(); ?>public/assets/images/medpart3.png" alt="<?= getenv('APP_NAME'); ?>" width="64">
