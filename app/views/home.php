@@ -35,7 +35,7 @@
    <div id="fullpage">
       <div class="section" id="section0">
          <div class="container">
-            <img src="<?= base_url(); ?>public/assets/splash/images/logo.png" alt="<?= getenv('APP_NAME'); ?>" width="75" style="margin-bottom: 20px">
+            <img src="<?= base_url(); ?>public/assets/splash/images/logo.png" alt="<?= getenv('APP_NAME'); ?>" width="144" style="margin-bottom: 20px">
             <br>
             <img class="img img-fluid" src="<?= base_url(); ?>public/assets/splash/images/title.png" alt="<?= getenv('APP_TITLE'); ?>">
             <h2 class="mb-5">Berkarya Bersama Ciptakan Kejayaan Indonesia</h2>
